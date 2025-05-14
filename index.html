@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Email Sender</title>
+</head>
+<body>
+    <form action="send_email.php" method="post">
+        <label for="recipient">Recipient Email:</label>
+        <input type="email" id="recipient" name="recipient" required>
+        
+        <label for="subject">Subject:</label>
+        <input type="text" id="subject" name="subject" required>
+        
+        <label for="message">Message:</label>
+        <textarea id="message" name="message" required></textarea>
+        
+        <button type="submit">Send Email</button>
+    </form>
+    
+    <style>
+        form {
+            max-width: 500px;
+            margin: 20px auto;
+            padding: 20px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+        }
+        label, input, textarea, button {
+            display: block;
+            width: 100%;
+            margin-bottom: 10px;
+        }
+        input, textarea {
+            padding: 8px;
+            border: 1px solid #ddd;
+        }
+        button {
+            background-color: #4CAF50;
+            color: white;
+            padding: 10px;
+            border: none;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #45a049;
+        }
+    </style>
+</body>
+</html>
